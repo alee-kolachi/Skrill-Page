@@ -130,8 +130,45 @@
             font-size: 0.85em;
 
             border: 1px solid #48515F;
-            padding: 5px 15px;
+            padding: 5px 18px;
             border-radius: 3px;
+            -webkit-transition: color 1s;
+            -moz-transition: background-color 0.3s;
+            -ms-transition: background-color 0.3s;
+            -o-transition: background-color 0.3s;
+            transition: background-color 0.3s;
+        }
+
+        #login:hover,
+        #register:hover {
+            background-color: #48515F;
+            color: rgb(255, 255, 255, 0.9);
+        }
+
+        #xyz {
+            position: relative;
+            
+            //display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            color: #48515F;
+            position: absolute;
+            background-color: #f9f9f9;
+            font-family: "Helvetica";
+            font-weight: 550;
+            font-size: 0.75em;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        li:hover{
+            background-color: black;
+        }
+        #xyz:hover .dropdown-content {
+            display: block;
         }
 
     </style>
@@ -158,11 +195,26 @@
         </div>
 
 
-        <div class="second-light">
+
+
+
+        <div class="second-light" id="xyz">
+           
+           
             <img src="logo.png" alt="logo" class="logo" />
             <nav>
                 <ul id="second-list">
                     <li><a href="#">Transfer Money</a></li>
+                    
+                    
+                    <div class="dropdown-content">
+                        <p>Hello World!</p>
+                        <p>Hello World!</p>
+                        <p>Hello World!</p>
+                        <p>Hello World!</p>
+                    </div>
+                    
+                    
                     <li><a href="#">Pay Online</a></li>
                     <li><a href="#">Vip Programme</a></li>
                 </ul>
