@@ -1,45 +1,174 @@
 <!DOCTYPE Html>
 <html>
-    <head>
-        <title>Online payment & Money transfer | Skrill</title>
-        <style>
-            body{
-                padding: 0px;
-                margin: 0px;
-            }
-            nav{
-                background-color: #48515F;
-                padding: 10px 0px 10px 20px;
-            }
-            nav a{
-                color: white;
-                font-family: "Arial";
-                text-decoration: none;
-                font-size: 0.80em;
-                letter-spacing: 1.2px;
 
-            }
-            .active{}
-            .noactive{
-                color: #767A8C;
-            }
-            ul{
-                list-style-type: none
-            }
-        </style>
-    </head>
-    
-    <body>
+<head>
+    <title>Online payment & Money transfer | Skrill</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Helvetica";
+            font-weight: 550;
+            font-size: 0.75em;
+            color: white;
+            background: url(background.PNG) no-repeat top left fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+
+
+
+        }
+
+        .top-gray {
+            margin: 0 auto;
+            background: #48515F;
+
+        }
+
+        .top-gray:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .top-gray ul {
+            margin-left: 10px;
+            padding: 3px;
+        }
+
+        ul {
+            float: left;
+            list-style-type: none;
+            text-decoration: none;
+
+        }
+
+        .right {
+            float: right;
+            margin-right: 25px;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 10;
+            list-style: none;
+            padding: 4px;
+        }
+
+        nav li {
+            display: inline-block;
+            padding: 4px;
+
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: normal;
+            font-size: 0.83em;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+
+        }
+
+        #active {}
+
+        #noactive {
+            color: #707468;
+        }
+
+        .logo {
+            width: 103px;
+            float: left;
+            margin-left: 7px;
+        }
+
+        .second-light {
+            padding: 15px 20px;
+            margin: 0 auto;
+            background: rgb(255, 255, 255, 0.9);
+
+        }
+
+        .second-light:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        #second-list a {
+            color: #48515F;
+            font-size: 1.0em;
+
+        }
+
+        #second-list li {
+            margin-left: 22px;
+            padding-top: 8px;
+
+        }
+        #second-list-right{
+            float: right
+        }
+        #second-list-right a{
+            color: #48515F;
+            font-size: 1.0em;
+        }
+        #second-list-right li{
+            padding-top: 8px;
+        }
+        #second-list-right #login, #second-list-right #register{
+             font-size: 0.8em;
+        }
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <header>
+        <div class="top-gray">
             <nav>
-                    <a href="#" class="active">Personal</a>
-                    <font color="white">|</font>
-                    <a href="#" class="noactive">Business</a>
-                <ul>
-                    <li>SKRILL NEWS</li>
-                    <li><i></i>HELP</li>
-                    <li><i></i>EN</li>
+                <ul class="left">
+                    <li><a href="#" id="active">Personal</a></li>
+                    |
+                    <li><a href="#" id="noactive">Business</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="#">Skrill News</a></li>
+                    <li><a href="#"><i class="material-icons" style="font-size:16px;">help</i>Help</a></li>
+                    <li><a href="#"><i class="material-icons" style="font-size:16px; font-weight: 19px;">language</i>News</a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+
+        <div class="second-light">
+            <img src="logo.png" alt="logo" class="logo" />
+            <nav>
+                <ul id="second-list">
+                    <li><a href="#">Transfer Money</a></li>
+                    <li><a href="#">Pay Online</a></li>
+                    <li><a href="#">Vip Programme</a></li>
+                </ul>
+                <ul id="second-list-right">
+                    <li><a href="#">Exclusive Offers</a></li>
+                    <li><a href="#" id="login">Login</a></li>
+                    <li><a href="#" id="register">Register</a></li>
+                    
+                    
                 </ul>
             </nav>
-        
-    </body>
-        </html>
+
+        </div>
+    </header>
+
+
+
+</body>
+
+</html>
