@@ -145,11 +145,11 @@
             color: rgb(255, 255, 255, 0.9);
         }
 
-        #xyz {
+        #second-list {
             position: relative;
-            
-            //display: inline-block;
+            display: inline-block;
         }
+
 
         .dropdown-content {
             display: none;
@@ -161,14 +161,51 @@
             font-size: 0.75em;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 160px;
+            z-index: 10;
+        }
+
+        .dropdown-content a {
+            color: black;
             padding: 12px 16px;
-            z-index: 1;
-        }
-        li:hover{
-            background-color: black;
-        }
-        #xyz:hover .dropdown-content {
+            text-decoration: none;
             display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        #second-list:hover .dropdown-content {
+            display: block;
+            margin-left: 22px;
+        }
+
+        #second-list .sub:hover {
+            background-color: #fff;
+        }
+
+        div h1 {
+            font-size: 62px;
+            color: white;
+            text-transform: uppercase;
+            font-family: 'BebasNeue';
+            padding: 0px;
+            margin: 0px;
+            margin-top: 6%;
+            margin-left: 148px;
+
+        }
+
+        @font-face {
+            font-family: 'BebasNeue';
+            src: url('BebasNeue Bold.ttf');
+            /* IE9 Compat Modes */
+
+        }
+
+        .teal-heading {
+            color: #ffd800
         }
 
     </style>
@@ -199,24 +236,32 @@
 
 
         <div class="second-light" id="xyz">
-           
-           
+
+
             <img src="logo.png" alt="logo" class="logo" />
             <nav>
                 <ul id="second-list">
-                    <li><a href="#">Transfer Money</a></li>
-                    
-                    
+                    <li class="sub"><a href="#">Transfer Money</a></li>
+
+
                     <div class="dropdown-content">
-                        <p>Hello World!</p>
-                        <p>Hello World!</p>
-                        <p>Hello World!</p>
-                        <p>Hello World!</p>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+
                     </div>
-                    
-                    
-                    <li><a href="#">Pay Online</a></li>
-                    <li><a href="#">Vip Programme</a></li>
+
+
+                    <li class="sub"><a href="#">Pay Online</a></li>
+
+                    <div class="dropdown-content">
+                        <a href="#">Link</a>
+                        <a href="#">Link</a>
+                        <a href="#">Link</a>
+
+                    </div>
+
+                    <li class="sub"><a href="#">Vip Programme</a></li>
                 </ul>
                 <ul id="second-list-right">
                     <li><a href="#">Exclusive Offers</a></li>
@@ -229,6 +274,12 @@
 
         </div>
     </header>
+    <div>
+        <h1>
+            Transfer Money
+            <br>
+            <span class="teal-heading">For free</span>
+        </h1>
 
 
 
