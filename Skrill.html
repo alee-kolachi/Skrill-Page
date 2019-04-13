@@ -16,9 +16,6 @@
             -o-background-size: cover;
             background-size: cover;
 
-
-
-
         }
 
         .top-gray {
@@ -155,7 +152,7 @@
             display: none;
             color: #48515F;
             position: absolute;
-            background-color: #f9f9f9;
+            background-color: #fff;
             font-family: "Helvetica";
             font-weight: 550;
             font-size: 0.75em;
@@ -173,7 +170,7 @@
         }
 
         .dropdown-content a:hover {
-            background-color: #ddd;
+            background-color: #fff;
         }
 
         #second-list:hover .dropdown-content {
@@ -184,7 +181,7 @@
         #second-list .sub:hover {
             background-color: #fff;
         }
-
+       
         div h1 {
             font-size: 62px;
             color: white;
@@ -194,6 +191,7 @@
             margin: 0px;
             margin-top: 6%;
             margin-left: 148px;
+            
 
         }
 
@@ -208,6 +206,202 @@
             color: #ffd800
         }
 
+        @font-face {
+            font-family: 'roboto';
+            src: url('roboto-regular.ttf');
+            /* IE9 Compat Modes */
+
+        }
+
+        #after-header-part p {
+            font-family: "roboto";
+            font-size: 1.2em;
+            font-weight: 600;
+            line-height: 1.6;
+            letter-spacing: 1px;
+            padding: 0px;
+            margin: 0px;
+            margin-top: 2%;
+            margin-left: 148px;
+            width: 470px;
+        }
+
+        .middle-icons li {
+            margin-top: 54px;
+        }
+
+        .middle-icons p {
+            padding: 2px;
+            width: 85px;
+            letter-spacing: 1px;
+            font-weight: normal;
+        }
+
+        .middle-icons li {
+            margin-left: 108px;
+            display: inline-block;
+        }
+
+        .middle-icons li img {
+            float: left
+        }
+
+        .middle-icons li p {
+            display: inline-block;
+            font-size: .71rem;
+            position: absolute;
+
+        }
+
+        .middle-icons p {
+            margin-top: -2px;
+            font size: 9.8px;
+            font-weight: normal;
+            line-height: 15px;
+        }
+
+        .middle-icons img {
+            margin-right: 11px;
+            margin-top: 0px;
+        }
+
+        //////////
+        .calculator p{
+           margin-top: -100px;
+        }
+        .calculator ul{
+            margin-top: -262px;
+        }
+
+        .calculator li {
+            padding: 0px;
+            margin-left: 132px;
+            list-style-type: none;
+
+        }
+
+        .calculator #top-result {
+            width: 314px;
+            font-size: 1.6em;
+            font-family: "Source Sans Pro", sans-serif;
+            background-image: radial-gradient(#7E1F68, #55225D);
+            padding: 5px 1.5rem 0 1.2rem;
+            font-weight: 600;
+            color: #fff;
+            justify-content: left;
+            line-height: 2.2;
+            text-transform: uppercase;
+        }
+
+        #div-inside-div {
+            margin: 0px;
+            width: 327px;
+            background-color: white;
+            padding: 5px 15px 10px 15px;
+        }
+
+        #div-inside-div #calculator-send {
+            color: #969EA4;
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 0.9em;
+        }
+
+        #div-inside-div input {
+            padding: 0px 10px 0px 0px;
+            border: none;
+            color: #585166;
+            font-size: 2.7em;
+            font-weight: 600;
+            width: 132px;
+            outline: none;
+            padding-right: 77px;
+
+        }
+
+        #top-input-send {
+            //display: inline-block;
+            border-bottom: 1px solid #EFEFEF;
+
+        }
+
+        ::placeholder {
+            color: #534C62;
+            opacity: 1;
+            /* Firefox */
+        }
+
+        #div-inside-div div {
+            display: inline-block;
+        }
+
+        #div-inside-div .select-country {
+
+            padding-top: 9px;
+            padding-left: 16px;
+            margin-top: 0px;
+            border-left: 1px solid #ddd;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: #585166;
+        }
+
+        #div-inside-div img {
+            vertical-align: middle;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0px;
+        }
+
+        .select-country span {
+            padding-left: 10px;
+            vertical-align: middle;
+            font-size: 1.0em;
+        }
+
+        .select-country span {
+            vertical-align: middle;
+        }
+
+        i {
+            vertical-align: middle;
+            padding-bottom: 2px;
+            padding-left: 7px;
+            font-size: 1.4em;
+            color: #8E979E;
+        }
+
+        #pid {
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #534C62;
+            padding-top: 0px;
+        }
+
+        #div span {
+            
+            font-size: 1.3em
+        }
+        .button{
+            margin-left: 131.9px;
+            margin-top: 10px;
+            background-color: #FFD800;
+            border: none;
+            width: 357px;
+            padding: 6px 0px;
+            font-size: 1.4em;
+            font-weight: 600;
+            text-transform: uppercase;
+            
+            color: #811E68;
+            font-family: "Source Sans Pro", sans-serif;
+            
+        }
+        .button i{
+            font-size: 2em;
+            padding: 0px 10px;
+            color: #811E68;
+        }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -242,6 +436,7 @@
             <nav>
                 <ul id="second-list">
                     <li class="sub"><a href="#">Transfer Money</a></li>
+<!--
 
 
                     <div class="dropdown-content">
@@ -250,9 +445,11 @@
                         <a href="#">Link 3</a>
 
                     </div>
+-->
 
 
                     <li class="sub"><a href="#">Pay Online</a></li>
+<!--
 
                     <div class="dropdown-content">
                         <a href="#">Link</a>
@@ -260,6 +457,7 @@
                         <a href="#">Link</a>
 
                     </div>
+-->
 
                     <li class="sub"><a href="#">Vip Programme</a></li>
                 </ul>
@@ -274,15 +472,116 @@
 
         </div>
     </header>
-    <div>
-        <h1>
-            Transfer Money
-            <br>
-            <span class="teal-heading">For free</span>
-        </h1>
+    <div id="center-part">
+        <div id="after-header-part">
+            <h1>
+                Transfer Money
+                <br>
+                <span class="teal-heading">For free</span>
+            </h1>
 
 
 
-</body>
 
-</html>
+
+
+
+            <p>
+                No transfer fee when you send money directly to a bank account.<br />
+                Try the calculator to see what you will save by sending for free with Skrill.
+            </p>
+        </div>
+
+        <ul class="middle-icons">
+            <li>
+                <img src="./images/padlock__1_.png" />
+                <p>FCA Regulated</p>
+            </li>
+            <li>
+                <img src="./images/customers__1_.png" />
+                <p>Millions of customers</p>
+            </li>
+            <li>
+                <img src="./images/technology__1_.png" />
+                <p style="margin-top: -10px;">Leading risk and anti-fraud technology</p>
+            </li>
+        </ul>
+
+
+
+
+        <div>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+
+
+    </div>
+    //
+    <div class="calculator">
+        <ul>
+            <li id="top-result">GBP 1.00 = 185.38 PKR</li>
+            <li id="top-input-send">
+                <div id="div-inside-div">
+                    <div>
+                        <p id="calculator-send">You send from <span style="color:#838D94; font-weight:600">United Kingdom </span></p> <input type="text" value="1000.00" />
+                    </div>
+                    <div class="select-country">
+                        <img src="uk-flag.jpg" width="24px" height="24px" />
+                        <span>
+                            GBP<i class="material-icons">keyboard_arrow_down</i>
+                        </span>
+                    </div>
+
+                </div>
+            </li>
+            <li id="top-input-send">
+                <div id="div-inside-div">
+                    <div>
+                        <p id="calculator-send">They recieve in <span style="color:#838D94; font-weight:600">Pakistan</span></p> <input type="text" value="185662" />
+                    </div>
+                    <div class="select-country">
+                        <img src="pk-flag.jpg" width="24px" height="24px" />
+                        <span>
+                            PKR<i class="material-icons">keyboard_arrow_down</i>
+                        </span>
+                    </div>
+
+                </div>
+            </li>
+            <li id="top-input-send">
+                <div id="div-inside-div">
+                    <div>
+                        <p id="calculator-send">Deliver to</p>
+                        <p id="pid">Bank account</p>
+                    </div>
+
+
+                </div>
+            </li>
+            <li id="top-input-send">
+                <div id="div-inside-div">
+                    <div>
+                        <p id="calculator-send">Pay with</p>
+                        <p id="pid">Debit Card</p>
+                    </div>
+                    <i class="material-icons" style="float: right; padding-top: 7px;">keyboard_arrow_down</i>
+
+                </div>
+            </li>
+            <li id="top-input-send">
+                <div id="div-inside-div">
+                    <div id="div" style="color: #E54F4F; font-family: 'Source Sans Pro',sans-serif; padding: 5px; font-size: 0.95em;">
+                        <span>Fee</span><span style="float: right; padding-left:220px;">GBP 0.00</span>
+                        <br />
+                        <span style="color: #534C62; font-weight: 600;">Total to Pay</span><span style="color: #534C62; font-weight: 600;float: right; padding-top: 2px; <padding-left:2></padding-left:20px;">GBP 1000.00</span>
+                    </div>
+                </div>
+            </li>
+            <button class="button" type="submit"><i class="material-icons">send</i>Get Started</button>
+        </ul>
+        
+    </div>
+
+</body></html>
